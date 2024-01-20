@@ -1,0 +1,72 @@
+.spacerDiv {
+    padding: 10px;
+}
+
+.coverImage {
+    object-fit: cover;
+    max-height: 250px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.coverImageContainer {
+    position: relative;
+     text-align: center;
+    color: white;
+}
+
+.coverImageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.columnContainer {
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+.rowPadding {
+    padding: 0px 13px 0px 13px;
+}
+
+.quote {
+    font-size: 64px;
+    padding: 50px 100px 50px 100px
+}
+
+.blackBackground {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+@media only screen and (min-width: 1401px) {
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .quote {
+        font-size: 36px;
+        padding: 25px 50px 25px 50px
+    }
+ }
+
+@media only screen and (max-width: 576px) {
+    .quote {
+        font-size: 36px;
+        padding: 25px 50px 25px 50px
+    }
+}
