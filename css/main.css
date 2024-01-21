@@ -4,14 +4,15 @@
 
 .coverImage {
     object-fit: cover;
-    max-height: 250px;
+    max-height: 400px;
+    max-width: 1140px;
     width: 100%;
     border-radius: 40px;
 }
 
 .coverImageContainer {
     position: relative;
-     text-align: center;
+    text-align: center;
     color: white;
 }
 
@@ -33,7 +34,17 @@
 
 .quote {
     font-size: 64px;
-    padding: 50px 100px 50px 100px
+    padding: 50px 100px 50px 100px;
+}
+
+.maxWidth {
+    max-width: 1140px;
+    position: relative;
+    margin: auto;
+}
+
+.maxWidthLeftAlign {
+    max-width: 1140px;
 }
 
 .blackBackground {
@@ -41,8 +52,43 @@
     color: white;
 }
 
+.standardContainer {
+    padding: 50px 100px 50px 100px;
+    background-color: rgb(245, 245, 247);
+    border-radius: 40px;
+}
 
+.videoFormat {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius: 40px;
+}
 
+#logo {
+    font-size: 48px;
+}
+
+.coverImageSpacerDiv {
+    padding: 52px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+}
+
+@supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
+  (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
+  .navbar-b.navbar-reduce {
+    transition: all 0.5s ease-in-out;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  }
+}
 
 
 @media only screen and (min-width: 1401px) {
@@ -62,11 +108,19 @@
         font-size: 36px;
         padding: 25px 50px 25px 50px
     }
+
+    .standardContainer {
+        padding: 12px 25px 12px 25px;
+    }
  }
 
 @media only screen and (max-width: 576px) {
     .quote {
         font-size: 36px;
         padding: 25px 50px 25px 50px
+    }
+
+    .standardContainer {
+        padding: 12px 25px 12px 25px;
     }
 }
