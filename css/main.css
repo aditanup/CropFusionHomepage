@@ -112,12 +112,22 @@
     .standardContainer {
         padding: 12px 25px 12px 25px;
     }
+
+    .responsiveMarginTop {
+        margin-top: 10px;
+    }
+
+
  }
 
 @media only screen and (max-width: 576px) {
     .quote {
         font-size: 36px;
         padding: 25px 50px 25px 50px
+    }
+
+    .responsiveMarginTop {
+        margin-top: 10px;
     }
 
     .standardContainer {
